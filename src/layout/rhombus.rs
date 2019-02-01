@@ -72,6 +72,8 @@ impl Rhombus {
     }
 
     /// Calculate generational bound
+    /// MORE DOCUMENTATION!!!!!!
+    /// aaaa
     fn generation_bound(index: u64) -> u64 {
         Self::gen(index, Gen::Bound)
     }
@@ -97,12 +99,10 @@ impl LayoutGenerator for Rhombus {
     fn rel_position(index: u64) -> (i64, i64) {
         let upper = Self::generation_bound(index);
         let generation = Self::generation(index);
+        
+        println!("{} --> {} --> {}", index, generation, upper);
+        // let x = Self::x(generation, index);
 
-        let foo = String::new();
-
-        println!("Index: {}", index);
-        let x = Self::x(generation, index);
-
-        (x, 0)
+        (0, 0)
     }
 }

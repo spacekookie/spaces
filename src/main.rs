@@ -13,6 +13,6 @@ fn main() {
     for i in 1..60 {
         let (x, _) = Rhombus::rel_position(i);
         // let generation = i as u64 / gen as u64;
-        println!("For {} x: {}", i, x);
+        // println!("For {} x: {}", i, x);
     }
 }
